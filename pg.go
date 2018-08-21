@@ -1,4 +1,4 @@
-package errors
+package decorator
 
 import (
 	"github.com/go-xorm/core"
