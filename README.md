@@ -1,2 +1,3 @@
-# xorm-errors
-xorm errors checker extend
+# xorm-decorator
+
+xorm decorator library
