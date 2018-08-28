@@ -9,8 +9,8 @@ type sqliteDialect struct {
 }
 
 func (dialect *sqliteDialect) DuplicateKey(err error) bool {
-	if v, ok := err.(*sqlite3.Error); ok {
-		if v.Code == 2067 {
+	if v, ok := err.(sqlite3.Error); ok {
+		if v.ExtendedCode == 2067 {
 			return true
 		}
 		return false
